@@ -1,5 +1,5 @@
 body {
-  background: #dfe7ef;
+  background: #6FCBE8;
   font-family: "Bitter", serif;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .player {
-  background: #eef3f7;
+  background: #0A1219;
   width: 410px;
   min-height: 480px;
   box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
@@ -70,12 +70,12 @@ body {
   border-radius: 15px;
   z-index: 1;
 }
-@media screen and (max-width: 576px), (max-height: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
   .player-cover {
     margin-top: -70px;
     margin-bottom: 25px;
     width: 290px;
-    height: 230px;
+    height: 290px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -298,7 +298,7 @@ body {
 }
 .album-info__track {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.7;
   line-height: 1.3em;
   min-height: 52px;

@@ -13,11 +13,12 @@
       href="https://meyerweb.com/eric/tools/css/reset/reset.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Mini Player</title>
+    <link rel="icon" href="img\logo.png">
+    <title>BRDM<3</title>
   </head>
   <body>
     <div class="wrapper" id="app">
-      <img id="logo" src="img/potify.png">
+      <img id="logo" src="img/spotify.png">
       <div class="player">
         <div class="player__top">
           <div class="player-cover">
@@ -57,8 +58,8 @@
         <div class="progress" ref="progress">
           <div class="progress__top">
             <div class="album-info" v-if="currentTrack">
-              <div class="album-info__name">{{ currentTrack.artist }}</div>
-              <div class="album-info__track">{{ currentTrack.name }}</div>
+              <div class="album-info__name">{{ currentTrack.name }}</div>
+              <div class="album-info__track">{{ currentTrack.artist }}</div>
             </div>
             <div class="progress__duration">{{ duration }}</div>
           </div>
@@ -69,8 +70,8 @@
         </div>
         <div v-cloak></div>
       </div>
-      <a href="https://github.com/muhammederdem/mini-player" target="_blank" class="github-btn">
-        See on GitHub
+      <a href="https://open.spotify.com/playlist/1Yl6zKpHf9dHDn3WZuPay1?si=c1e6d5a1f73e4673" target="_blank" class="github-btn">
+        Play on Spotify
       </a>
     </div>
 
