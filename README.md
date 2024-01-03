@@ -1,6 +1,6 @@
 # A Mini Music Player - HTML, CSS and Javascript.
 
-<img width="1448" alt="Screenshot 2023-08-14 at 5 34 24 PM" src="https://github.com/developerrahulofficial/Potify-mini-Music-Player/assets/83329806/315cf8f8-9998-43c2-b5f8-36e530536f7c">
+<img width="1448" alt="" src="https://github.com/developerrahulofficial/Potify-mini-Music-Player/assets/83329806/315cf8f8-9998-43c2-b5f8-36e530536f7c">
 
 In this example, we'll create a simple music player interface using HTML, CSS, and Vue.js for the interactions. Here's how you can do it:
 
