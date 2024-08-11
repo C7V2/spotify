@@ -252,6 +252,14 @@ new Vue({
           url: "https://open.spotify.com/track/5ajjAnNRh8bxFvaVHzpPjh?si=23547e748b3647b3",
           favorited: false
         }
+        {
+          name: "Why Why Why ",
+          artist: "Shawn Mendes",
+          cover: "https://c.saavncdn.com/531/Shawn-English-2024-20240809064633-500x500.jpg",
+          source: "https://hello6432673.blob.core.windows.net/hellooo/aa.mp3?sp=r&st=2024-08-11T08:00:53Z&se=2030-08-11T16:00:53Z&spr=https&sv=2022-11-02&sr=b&sig=YiH3%2FiLUW7kgIO15YVt0a8SmYpWefMZs%2FzKOk0evTUs%3D",
+          url: "https://open.spotify.com/track/52A0oY4u5ufxrHC85JGf4x?si=3933980e4e8043b6",
+          favorited: false
+        }
       ],
       currentTrack: null,
       currentTrackIndex: 0,
