@@ -251,7 +251,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/z.mp3?sp=r&st=2023-12-21T16:10:14Z&se=2030-02-08T00:10:14Z&spr=https&sv=2022-11-02&sr=b&sig=Hyxr94xl%2FbF%2BwjyDhhAYt66pFe77ZDWeo8%2FPFuIgLxs%3D",
           url: "https://open.spotify.com/track/5ajjAnNRh8bxFvaVHzpPjh?si=23547e748b3647b3",
           favorited: false
-        }
+        },
         {
           name: "Why Why Why ",
           artist: "Shawn Mendes",
