@@ -45,7 +45,6 @@ new Vue({
         { background: "#85BDA6", player: "#3E885B" },
         { background: "#B79CED", player: "#957FEF" },
         { background: "#EAEAEA", player: "#C0D6DF" },
-        { background: "#C0D6DF", player: "#4F6D7A" },
       ],
       currentColorIndex: 0,
       tracks: [
@@ -393,13 +392,6 @@ new Vue({
     };
 
     // this is optional (for preload covers)
-    for (let index = 0; index < this.tracks.length; index++) {
-      const element = this.tracks[index];
-      let link = document.createElement('link');
-      link.rel = "prefetch";
-      link.href = element.cover;
-      link.as = "image"
-      document.head.appendChild(link)
-    }
+    
   }
 });
