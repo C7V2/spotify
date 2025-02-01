@@ -386,7 +386,7 @@ new Vue({
           source:"https://aac.saavncdn.com/427/b79e2390157e97b8bbd66f74018a44fd_160.mp4",
           url: "https://open.spotify.com/track/0qvzXomUDJVaUboy2wMfiS?si=aff393e741e142d3",
           favorited: false,
-          colors: { background: "#CFCEBC", player: "#858779" }
+          colors: { background: "#CFCEBC", player: "#3F423A" }
         },
         // {
         //   name: "",
