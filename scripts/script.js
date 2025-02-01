@@ -1,9 +1,7 @@
-
 new Vue({
   el: "#app",
   data() {
     return {
-      
       audio: null,
       circleLeft: null,
       barWidth: null,
@@ -28,7 +26,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/b.mp3?sp=r&st=2023-12-17T21:28:40Z&se=2030-03-07T05:28:40Z&spr=https&sv=2022-11-02&sr=b&sig=7TJR45z0VYYKSw7d6RKg8caTIcYjmgbc4a%2F3BubdAOE%3D",
           url: "https://open.spotify.com/track/3hRV0jL3vUpRrcy398teAU?si=3fce6070c66f4cbb",
           favorited: false,
-          colors: {  background: "#2F4F4F", player: "#24292e" }
+          colors: {  background: "#2F4F4F", player: "#1A1A1A" }
         },
 
         {
@@ -273,18 +271,10 @@ new Vue({
       let dursec = Math.floor(this.audio.duration - durmin * 60);
       let curmin = Math.floor(this.audio.currentTime / 60);
       let cursec = Math.floor(this.audio.currentTime - curmin * 60);
-      if (durmin < 10) {
-        durmin = "0" + durmin;
-      }
-      if (dursec < 10) {
-        dursec = "0" + dursec;
-      }
-      if (curmin < 10) {
-        curmin = "0" + curmin;
-      }
-      if (cursec < 10) {
-        cursec = "0" + cursec;
-      }
+      if (durmin < 10) { durmin = "0" + durmin; }
+      if (dursec < 10) { dursec = "0" + dursec; }
+      if (curmin < 10) { curmin = "0" + curmin; }
+      if (cursec < 10) { cursec = "0" + cursec; }
       this.duration = durmin + ":" + dursec;
       this.currentTime = curmin + ":" + cursec;
     },
@@ -293,12 +283,8 @@ new Vue({
       let maxduration = this.audio.duration;
       let position = x - progress.offsetLeft;
       let percentage = (100 * position) / progress.offsetWidth;
-      if (percentage > 100) {
-        percentage = 100;
-      }
-      if (percentage < 0) {
-        percentage = 0;
-      }
+      if (percentage > 100) { percentage = 100; }
+      if (percentage < 0) { percentage = 0; }
       this.barWidth = percentage + "%";
       this.circleLeft = percentage + "%";
       this.audio.currentTime = (maxduration * percentage) / 100;
@@ -315,78 +301,84 @@ new Vue({
       
       if (this.currentTrackIndex > 0) {
         this.currentTrackIndex--;
-        this.currentTrack = this.tracks[this.currentTrackIndex];
-        this.changeColors();  // Update colors only for the current track
       } else {
         this.currentTrackIndex = this.tracks.length - 1;
-        this.currentTrack = this.tracks[this.currentTrackIndex];
-        this.changeColors();  // Update colors for the last track
       }
-      
+      this.currentTrack = this.tracks[this.currentTrackIndex];
+      this.changeColors();  // Update colors based on current track
       this.resetPlayer();
     },
-    
     nextTrack() {
       this.transitionName = "scale-out";
       this.isShowCover = false;
       
       if (this.currentTrackIndex < this.tracks.length - 1) {
         this.currentTrackIndex++;
-        this.currentTrack = this.tracks[this.currentTrackIndex];
-        this.changeColors();  // Update colors only for the current track
       } else {
         this.currentTrackIndex = 0;
-        this.currentTrack = this.tracks[this.currentTrackIndex];
-        this.changeColors();  // Update colors for the first track
       }
-      
+      this.currentTrack = this.tracks[this.currentTrackIndex];
+      this.changeColors();  // Update colors based on current track
       this.resetPlayer();
     },
     changeColors() {
-      // Get the current track's color options
       const currentTrackColors = this.currentTrack.colors;
-    
-      // Apply the background and player colors for the current track
       document.body.style.backgroundColor = currentTrackColors.background;
       document.querySelector('.player').style.backgroundColor = currentTrackColors.player;
     },
-
     resetPlayer() {
       this.barWidth = 0;
       this.circleLeft = 0;
       this.audio.currentTime = 0;
       this.audio.src = this.currentTrack.source;
       setTimeout(() => {
-        if(this.isTimerPlaying) {
+        if (this.isTimerPlaying) {
           this.audio.play();
         } else {
           this.audio.pause();
         }
       }, 300);
     },
+    // Modified favorite method and new helper methods
     favorite() {
-      this.tracks[this.currentTrackIndex].favorited = !this.tracks[
-        this.currentTrackIndex
-      ].favorited;
+      // Toggle the current track's favorite status
+      this.tracks[this.currentTrackIndex].favorited = !this.tracks[this.currentTrackIndex].favorited;
+      this.saveFavorites();
+    },
+    saveFavorites() {
+      // Create an array of favorite statuses for all tracks
+      const favStatus = this.tracks.map(track => track.favorited);
+      localStorage.setItem('favorites', JSON.stringify(favStatus));
+    },
+    loadFavorites() {
+      const favs = localStorage.getItem('favorites');
+      if (favs) {
+        const favArr = JSON.parse(favs);
+        this.tracks.forEach((track, index) => {
+          // If there is a saved favorite status for this track, load it.
+          if (favArr[index] !== undefined) {
+            track.favorited = favArr[index];
+          }
+        });
+      }
     }
   },
   created() {
-    let vm = this;
+    // Load favorite statuses from localStorage (if available)
+    this.loadFavorites();
+    
     this.currentTrack = this.tracks[0];
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
-    this.audio.ontimeupdate = function() {
-      vm.generateTime();
+    this.audio.ontimeupdate = () => {
+      this.generateTime();
     };
-    this.audio.onloadedmetadata = function() {
-      vm.generateTime();
+    this.audio.onloadedmetadata = () => {
+      this.generateTime();
     };
-    this.audio.onended = function() {
-      vm.nextTrack();
+    this.audio.onended = () => {
+      this.nextTrack();
       this.isTimerPlaying = true;
     };
-
-    // this is optional (for preload covers)
-    
   }
 });
