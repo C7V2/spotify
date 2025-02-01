@@ -26,9 +26,8 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/b.mp3?sp=r&st=2023-12-17T21:28:40Z&se=2030-03-07T05:28:40Z&spr=https&sv=2022-11-02&sr=b&sig=7TJR45z0VYYKSw7d6RKg8caTIcYjmgbc4a%2F3BubdAOE%3D",
           url: "https://open.spotify.com/track/3hRV0jL3vUpRrcy398teAU?si=3fce6070c66f4cbb",
           favorited: false,
-          colors: {  background: "#2F4F4F", player: "#1A1A1A" }
+          colors: { background: "#2F4F4F", player: "#1A1A1A" }
         },
-
         {
           name: "Best Part(feat. H.E.R.)",
           artist: "Daniel Caeser, H.E.R.",
@@ -38,7 +37,6 @@ new Vue({
           favorited: false,
           colors: { background: "#5C5552", player: "#433633" }
         },
-
         {
           name: "cold/mess",
           artist: "Prateek Kuhad",
@@ -55,7 +53,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/e.mp3?sp=r&st=2023-12-17T21:17:33Z&se=2030-05-09T05:17:33Z&spr=https&sv=2022-11-02&sr=b&sig=rQlAz3xbAHdhKSXpK51I3UU8LjjAFQlArwqg48uEn5E%3D",
           url: "https://open.spotify.com/track/0yc6Gst2xkRu0eMLeRMGCX?si=6e1d87db0b7f496c",
           favorited: false,
-          colors: {  background: "#212529", player: "#343A40" }
+          colors: { background: "#212529", player: "#343A40" }
         },
         {
           name: "I GUESS I'M IN LOVE",
@@ -82,7 +80,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/h.mp3?sp=r&st=2023-12-17T21:22:29Z&se=2029-07-12T05:22:29Z&spr=https&sv=2022-11-02&sr=b&sig=VH6Md6hMInJq%2F5TBzevfQwL5Hp8turAdrRFT9cV%2BMSA%3D",
           url: "https://open.spotify.com/track/2gzhQaCTeNgxpeB2TPllyY?si=d77b3257caf549e2",
           favorited: false,
-          colors: {  background: "#E8E9EB", player: "#F2CCCB" }
+          colors: { background: "#E8E9EB", player: "#F2CCCB" }
         },
         {
           name: "Thinking Out Loud",
@@ -91,7 +89,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/i.mp3?sp=r&st=2023-12-17T21:24:07Z&se=2029-12-12T05:24:07Z&spr=https&sv=2022-11-02&sr=b&sig=%2FNJjwB%2FmaRKi8atAPriax55b6IkDx9fQObPAOsJvKho%3D",
           url: "https://open.spotify.com/track/34gCuhDGsG4bRPIf9bb02f?si=d36c4c25a9424de6",
           favorited: false,
-          colors: {  background: "#8bb174", player: "#426b69" }
+          colors: { background: "#8bb174", player: "#426b69" }
         },
         {
           name: "Until I Found You",
@@ -118,9 +116,8 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/l.mp3?sp=r&st=2023-12-20T05:26:59Z&se=2030-01-04T13:26:59Z&spr=https&sv=2022-11-02&sr=b&sig=ro5AR%2FrF3FtA9F0u3svwZB7sKYRkh0dh6BglCHAQBs4%3D",
           url: "https://open.spotify.com/track/4CxFN5zON70B3VOPBYbd6P?si=d3fd21f660814006",
           favorited: false,
-          colors: {  background: "#98B4C6", player: "#D9D3D3" }
+          colors: { background: "#98B4C6", player: "#D9D3D3" }
         },
-
         {
           name: "Make You Mine(Acoustic)",
           artist: "PUBLIC",
@@ -155,7 +152,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/p.mp3?sp=r&st=2023-12-20T05:50:29Z&se=2030-05-01T13:50:29Z&spr=https&sv=2022-11-02&sr=b&sig=C5gIU5oS%2BEoZqa8G7pbCan1LgDmlsyamEkkTpIK3I%2F0%3D",
           url: "https://open.spotify.com/track/3Uo7WG0vmLQ07WB4BDwy7D?si=729b0d4d9a9542d0",
           favorited: false,
-          colors: {  background: "#7D6245", player: "#3C2A1D" }
+          colors: { background: "#7D6245", player: "#3C2A1D" }
         },
         {
           name: "It,ll Be Okay",
@@ -164,7 +161,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/q.mp3?sp=r&st=2023-12-20T05:51:09Z&se=2030-01-12T13:51:09Z&spr=https&sv=2022-11-02&sr=b&sig=LdsVl2F4zUOodtdbzroNfd60KwK7%2FZmpwiBaIMnJoYc%3D",
           url: "https://open.spotify.com/track/2KnLkZ3z7PO3kgVGHGqDpD?si=42518e21ae444173",
           favorited: false,
-          colors: {  background: "#212529", player: "#343A40" }
+          colors: { background: "#212529", player: "#343A40" }
         },
         {
           name: "Never Not",
@@ -182,7 +179,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/s.mp3?sp=r&st=2023-12-20T05:52:14Z&se=2030-01-05T13:52:14Z&spr=https&sv=2022-11-02&sr=b&sig=TLdmyowDYSmQ12kSoqU8TSw49l0yrcao7XV1S7I6fAo%3D",
           url: "https://open.spotify.com/track/5YVmHTAsdWnoanWXB7AwZX?si=118e8c0547294529",
           favorited: false,
-          colors: {  background: "#FAEDCD", player: "#D4A373" }
+          colors: { background: "#FAEDCD", player: "#D4A373" }
         },
         {
           name: "Glimpse of Us",
@@ -191,7 +188,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/t.mp3?sp=r&st=2023-12-20T05:54:38Z&se=2030-01-02T13:54:38Z&spr=https&sv=2022-11-02&sr=b&sig=OZQQaZerOzDFwlu2AnREaQXXuUD9CPUOlUaFJq0HYCs%3D",
           url: "https://open.spotify.com/track/4ewazQLXFTDC8XvCbhvtXs?si=1d19ae14e8674c2c",
           favorited: false,
-          colors: {  background: "#2F4F4F", player: "#24292e" }
+          colors: { background: "#2F4F4F", player: "#24292e" }
         },
         {
           name: "Mistletoe",
@@ -200,7 +197,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/u.mp3?sp=r&st=2023-12-20T05:53:23Z&se=2030-01-11T13:53:23Z&spr=https&sv=2022-11-02&sr=b&sig=WoMfWjvk%2BJmwVVISKjP860FSdqLDY0j%2Ft%2B5jLFB6vxU%3D",
           url: "https://open.spotify.com/track/7xapw9Oy21WpfEcib2ErSA?si=715f8124d17944b8",
           favorited: false,
-          colors: {  background: "#5C5552", player: "#433633" }
+          colors: { background: "#5C5552", player: "#433633" }
         },
         {
           name: "death bed(coffee for your head)",
@@ -218,7 +215,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/x.mp3?sp=r&st=2023-12-21T16:08:07Z&se=2030-01-12T00:08:07Z&spr=https&sv=2022-11-02&sr=b&sig=psR%2BrFg9GYFSZbuHiN6FDBGyY%2BjHhdD5b2nOHaz%2FuOQ%3D",
           url: "https://open.spotify.com/track/3afkJSKX0EAMsJXTZnDXXJ?si=f26a733723be4160",
           favorited: false,
-          colors: {  background: "#bf4342", player: "#8c1c13" }
+          colors: { background: "#bf4342", player: "#8c1c13" }
         },
         {
           name: "Heather",
@@ -227,7 +224,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/y.mp3?sp=r&st=2023-12-21T16:08:53Z&se=2030-11-04T00:08:53Z&spr=https&sv=2022-11-02&sr=b&sig=fMAm701ZSjusUfZijh6CYp09M8qouvEBPyKB90VHLeQ%3D",
           url: "https://open.spotify.com/track/4xqrdfXkTW4T0RauPLv3WA?si=685cf5aecc9c44de",
           favorited: false,
-          colors: {  background: "#E9EAE5", player: "#b9bdc1" }
+          colors: { background: "#E9EAE5", player: "#b9bdc1" }
         },
         {
           name: "Reckless ",
@@ -236,7 +233,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/z.mp3?sp=r&st=2023-12-21T16:10:14Z&se=2030-02-08T00:10:14Z&spr=https&sv=2022-11-02&sr=b&sig=Hyxr94xl%2FbF%2BwjyDhhAYt66pFe77ZDWeo8%2FPFuIgLxs%3D",
           url: "https://open.spotify.com/track/5ajjAnNRh8bxFvaVHzpPjh?si=23547e748b3647b3",
           favorited: false,
-          colors: {  background: "#462E16", player: "#241B0B" }
+          colors: { background: "#462E16", player: "#241B0B" }
         },
         {
           name: "Why Why Why ",
@@ -245,7 +242,7 @@ new Vue({
           source: "https://hello6432673.blob.core.windows.net/hellooo/aa.mp3?sp=r&st=2024-08-11T08:00:53Z&se=2030-08-11T16:00:53Z&spr=https&sv=2022-11-02&sr=b&sig=YiH3%2FiLUW7kgIO15YVt0a8SmYpWefMZs%2FzKOk0evTUs%3D",
           url: "https://open.spotify.com/track/52A0oY4u5ufxrHC85JGf4x?si=3933980e4e8043b6",
           favorited: false,
-          colors: {  background: "#969488", player: "#52534D" }
+          colors: { background: "#969488", player: "#52534D" }
         }
       ],
       currentTrack: null,
@@ -297,7 +294,6 @@ new Vue({
     },
     prevTrack() {
       this.transitionName = "scale-in";
-      this.isShowCover = false;
       
       if (this.currentTrackIndex > 0) {
         this.currentTrackIndex--;
@@ -307,10 +303,11 @@ new Vue({
       this.currentTrack = this.tracks[this.currentTrackIndex];
       this.changeColors();  // Update colors based on current track
       this.resetPlayer();
+      // Save the current track index
+      localStorage.setItem("currentTrackIndex", this.currentTrackIndex);
     },
     nextTrack() {
       this.transitionName = "scale-out";
-      this.isShowCover = false;
       
       if (this.currentTrackIndex < this.tracks.length - 1) {
         this.currentTrackIndex++;
@@ -320,6 +317,8 @@ new Vue({
       this.currentTrack = this.tracks[this.currentTrackIndex];
       this.changeColors();  // Update colors based on current track
       this.resetPlayer();
+      // Save the current track index
+      localStorage.setItem("currentTrackIndex", this.currentTrackIndex);
     },
     changeColors() {
       const currentTrackColors = this.currentTrack.colors;
@@ -355,7 +354,6 @@ new Vue({
       if (favs) {
         const favArr = JSON.parse(favs);
         this.tracks.forEach((track, index) => {
-          // If there is a saved favorite status for this track, load it.
           if (favArr[index] !== undefined) {
             track.favorited = favArr[index];
           }
@@ -367,7 +365,13 @@ new Vue({
     // Load favorite statuses from localStorage (if available)
     this.loadFavorites();
     
-    this.currentTrack = this.tracks[0];
+    // Load the saved track index (if any) so we start with the last played song
+    const savedTrackIndex = localStorage.getItem("currentTrackIndex");
+    if (savedTrackIndex !== null) {
+      this.currentTrackIndex = parseInt(savedTrackIndex);
+    }
+    this.currentTrack = this.tracks[this.currentTrackIndex];
+    
     this.audio = new Audio();
     this.audio.src = this.currentTrack.source;
     this.audio.ontimeupdate = () => {
@@ -380,5 +384,8 @@ new Vue({
       this.nextTrack();
       this.isTimerPlaying = true;
     };
+    
+    // Also set the colors based on the current track when the app is created
+    this.changeColors();
   }
 });
